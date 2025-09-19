@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quotation - Mystic World Store</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+    #content {
+      padding: 20px; /* Add padding for top/right/bottom/left */
+    }
+    .logo {
+      text-align: center;
+      margin-bottom: 10px;
+      page-break-inside: avoid;
+    }
+    .logo img {
+      max-width: 350px;
+      height: auto;
+    }
+    h1 {
+      text-align: center;
+      font-size: 22px;
+      margin: 10px 0 20px 0;
+      page-break-after: avoid;
+    }
+    h2 {
+      font-size: 16px;
+      margin-top: 20px;
+      margin-bottom: 8px;
+      color: #333;
+      page-break-after: avoid;
+    }
+    ul {
+      margin: 0;
+      padding-left: 20px;
+      page-break-inside: avoid;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 8px;
+      page-break-inside: auto;
+    }
+    table, th, td {
+      border: 1px solid #444;
+    }
+    th {
+      background: #f0f0f0;
+    }
+    th, td {
+      padding: 8px;
+      text-align: left;
+      font-size: 14px;
+    }
+    .pricing th {
+      background: #cce5ff;
+      text-align: center;
+    }
+    .pricing td {
+      text-align: center;
+    }
+    .signature {
+      margin-top: 40px;
+      page-break-inside: avoid;
+    }
+
+    /* Prevent page break inside important blocks */
+    h1, h2, h3, p, ul, table, .signature {
+      page-break-inside: avoid;
+    }
+
+    /* Optional: force page break */
+    .page-break {
+      page-break-before: always;
+    }
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+
+  <div id="content">
+    <div class="logo">
+      <img src="./Deal-With-Digital-World-3.png.webp" alt="Deal-With-Digital-World">
+    </div>
+
+    <h1>Quotation</h1>
+
+    <p><b>Client:</b> Mystic World Store</p>
+    <p><b>Date:</b> 19-09-2025</p>
+
+    <h2>Website Features:</h2>
+    <ul>
+      <li>User-friendly responsive design</li>
+      <li>Product categories</li>
+      <li>Shopping cart & secure checkout</li>
+      <li>User account creation and management</li>
+      <li>Wishlist functionality</li>
+      <li>Order tracking system</li>
+      <li>Multiple payment gateway integration</li>
+      <li>Admin dashboard for inventory & sales management</li>
+      <li>SEO optimized structure</li>
+      <li>Email notifications for orders & delivery updates</li>
+      <li>Mobile-friendly UI/UX</li>
+    </ul>
+
+    <h2>Technology Stack:</h2>
+    <table>
+      <tr><th>Frontend</th><td>React.js / WordPress (based on package)</td></tr>
+      <tr><th>Backend</th><td>Node.js (for React package)</td></tr>
+      <tr><th>Database</th><td>MongoDB / MySQL</td></tr>
+      <tr><th>Hosting</th><td>Cloud / Shared Hosting</td></tr>
+      <tr><th>CMS</th><td>WordPress (if selected)</td></tr>
+    </table>
+
+    <h2>Pricing:</h2>
+    <table class="pricing">
+      <tr><th>Package</th><th>Price</th></tr>
+      <tr><td>Using WordPress</td><td>₹ 30,000</td></tr>
+      <tr><td>Using React with Backend</td><td>₹ 35,000</td></tr>
+    </table>
+
+    <h2>Payment Terms:</h2>
+    <ul>
+      <li>50% of the project cost as advance</li>
+      <li>50% before final deployment</li>
+    </ul>
+
+    <div class="signature">
+      <p>Prepared By: ___________________ &nbsp;&nbsp;&nbsp;&nbsp; Approved By: ___________________</p>
+    </div>
+  </div>
+  
+  <button id="download">Download as pdf</button>
+
+  <script>
+    document.getElementById("download").addEventListener("click", () => {
+      const element = document.getElementById("content");
+
+      const opt = {
+        margin: [20, 15, 20, 15], // top, left, bottom, right in mm
+        filename: 'Quotation.pdf',
+        image: { type: 'jpeg', quality: 0.98 },
+        html2canvas: { scale: 2, scrollY: 0 },
+        jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+      };
+
+      html2pdf().set(opt).from(element).save();
+    });
+  </script>
+</body>
+</html>
