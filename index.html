@@ -2,21 +2,26 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Quotation - Mystic World Store</title>
+  <title>Quotation - Easytootty</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
       line-height: 1.6;
+      background-color: #f9f9f9;
     }
     #content {
-      padding: 20px; /* Add padding for top/right/bottom/left */
+      padding: 25px;
+      background-color: #fff;
+      max-width: 800px;
+      margin: 20px auto;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
     }
     .logo {
       text-align: center;
-      margin-bottom: 10px;
-      page-break-inside: avoid;
+      margin-bottom: 15px;
     }
     .logo img {
       max-width: 350px;
@@ -24,57 +29,81 @@
     }
     h1 {
       text-align: center;
-      font-size: 22px;
-      margin: 10px 0 20px 0;
-      page-break-after: avoid;
+      font-size: 24px;
+      margin: 10px 0 25px 0;
+      color: #2a2a72;
     }
     h2 {
-      font-size: 16px;
+      font-size: 18px;
       margin-top: 20px;
-      margin-bottom: 8px;
-      color: #333;
-      page-break-after: avoid;
+      margin-bottom: 10px;
+      color: #2a2a72;
+      border-bottom: 2px solid #2a2a72;
+      padding-bottom: 3px;
     }
     ul {
       margin: 0;
       padding-left: 20px;
-      page-break-inside: avoid;
+    }
+    ul li {
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      font-size: 15px;
+    }
+    ul li span {
+      margin-right: 8px;
+      font-size: 18px;
     }
     table {
       width: 100%;
       border-collapse: collapse;
       margin-top: 8px;
-      page-break-inside: auto;
     }
     table, th, td {
       border: 1px solid #444;
     }
     th {
-      background: #f0f0f0;
+      background: #d1e7ff;
     }
     th, td {
-      padding: 8px;
+      padding: 10px;
       text-align: left;
       font-size: 14px;
     }
     .pricing th {
-      background: #cce5ff;
+      background: #ffe0b3;
       text-align: center;
+      font-size: 16px;
     }
     .pricing td {
       text-align: center;
+      font-weight: bold;
     }
     .signature {
       margin-top: 40px;
-      page-break-inside: avoid;
+      display: flex;
+      justify-content: space-between;
+    }
+    .signature p {
+      font-weight: bold;
+    }
+    button {
+      display: block;
+      margin: 25px auto;
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #2a2a72;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #1a1a50;
     }
 
-    /* Prevent page break inside important blocks */
-    h1, h2, h3, p, ul, table, .signature {
-      page-break-inside: avoid;
-    }
-
-    /* Optional: force page break */
+    /* Page break */
     .page-break {
       page-break-before: always;
     }
@@ -84,66 +113,72 @@
 <body>
 
   <div id="content">
+    <!-- Page 1 -->
     <div class="logo">
       <img src="./Deal-With-Digital-World-3.png.webp" alt="Deal-With-Digital-World">
     </div>
 
-    <h1>Quotation</h1>
+    
+    <h1>💼 Website Proposal</h1>
+    <h1>📄 Quotation</h1>
 
-    <p><b>Client:</b> Mystic World Store</p>
-    <p><b>Date:</b> 19-09-2025</p>
+    <p><b>Client:</b> Easytootty</p>
+    <p><b>Date:</b> 22-10-2025</p>
 
-    <h2>Website Features:</h2>
+    <h2>✨ Website Features:</h2>
     <ul>
-      <li>User-friendly responsive design</li>
-      <li>Product categories</li>
-      <li>Shopping cart & secure checkout</li>
-      <li>User account creation and management</li>
-      <li>Wishlist functionality</li>
-      <li>Order tracking system</li>
-      <li>Multiple payment gateway integration</li>
-      <li>Admin dashboard for inventory & sales management</li>
-      <li>SEO optimized structure</li>
-      <li>Email notifications for orders & delivery updates</li>
-      <li>Mobile-friendly UI/UX</li>
+      <li><span>🏨</span> 13 Service listings (Hotel, Doctor, Taxi, Driver, etc.)</li>
+      <li><span>📱</span> User-friendly responsive design</li>
+      <li><span>📝</span> Enquiry form for each service</li>
+      <li><span>📊</span> Dashboard for handling enquiries & tracking requests</li>
+      <li><span>💬</span> Owner contacts customer via WhatsApp</li>
+      <li><span>🎨</span> Mobile-friendly UI/UX</li>
+      <li><span>🔍</span> SEO optimized structure</li>
+      <li><span>📧</span> Email notifications for enquiries</li>
+      <li><span>🔒</span> Secure backend with role-based access</li>
     </ul>
 
-    <h2>Technology Stack:</h2>
+    <h2>💻 Technology Stack:</h2>
     <table>
-      <tr><th>Frontend</th><td>React.js / WordPress (based on package)</td></tr>
-      <tr><th>Backend</th><td>Node.js (for React package)</td></tr>
-      <tr><th>Database</th><td>MongoDB / MySQL</td></tr>
-      <tr><th>Hosting</th><td>Cloud / Shared Hosting</td></tr>
-      <tr><th>CMS</th><td>WordPress (if selected)</td></tr>
+      <tr><th>⚡ Frontend</th><td>React.js / HTML5 / CSS3</td></tr>
+      <tr><th>🖥️ Backend</th><td>Node.js / Express.js</td></tr>
+      <tr><th>🗄️ Database</th><td>MongoDB / MySQL</td></tr>
+      <tr><th>☁️ Hosting</th><td>Cloud / Shared Hosting</td></tr>
     </table>
 
-    <h2>Pricing:</h2>
+    <div class="page-break"></div>
+
+    <!-- Page 2 -->
+    <h2>💰 Pricing Breakdown:</h2>
     <table class="pricing">
-      <tr><th>Package</th><th>Price</th></tr>
-      <tr><td>Using WordPress</td><td>₹ 30,000</td></tr>
-      <tr><td>Using React with Backend</td><td>₹ 35,000</td></tr>
+      <tr><th>🎨 Process</th><th>Price</th></tr>
+      <tr><td>🎨 UI/UX Design</td><td>₹ 15  ,000</td></tr>
+      <tr><td>💻 Frontend Development</td><td>₹ 20,000</td></tr>
+      <tr><td>🖥️ Backend Development</td><td>₹ 15 ,000</td></tr>
+      <tr><th>Total</th><th>₹ 50,000</th></tr>
     </table>
 
-    <h2>Payment Terms:</h2>
+    <h2>💳 Payment Terms:</h2>
     <ul>
-      <li>50% of the project cost as advance</li>
-      <li>50% before final deployment</li>
+      <li><span>🟢</span> 50% of the project cost as advance</li>
+      <li><span>🔵</span> 50% before final deployment</li>
     </ul>
 
     <div class="signature">
-      <p>Prepared By: ___________________ &nbsp;&nbsp;&nbsp;&nbsp; Approved By: ___________________</p>
+      <p>Prepared By: ___________________</p>
+      <p>Approved By: ___________________</p>
     </div>
   </div>
-  
-  <button id="download">Download as pdf</button>
+
+  <button id="download">Download as PDF</button>
 
   <script>
     document.getElementById("download").addEventListener("click", () => {
       const element = document.getElementById("content");
 
       const opt = {
-        margin: [20, 15, 20, 15], // top, left, bottom, right in mm
-        filename: 'Quotation.pdf',
+        margin: [20, 15, 20, 15],
+        filename: 'Quotation_Easytootty.pdf',
         image: { type: 'jpeg', quality: 0.98 },
         html2canvas: { scale: 2, scrollY: 0 },
         jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
